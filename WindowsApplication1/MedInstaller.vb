@@ -18,8 +18,8 @@ Public Class MedInstaller
             num = num + 1
         End While
 
-        If File.Exists(Path.Combine(cartella, "MedGuiR\ListServer.txt")) And CheckBox2.Checked = False Then File.Delete(cartella & "MedGuiR\Update\MedGuiR\ListServer.txt")
-        If File.Exists(Path.Combine(cartella, "MedGuiR\UCI.txt")) And CheckBox1.Checked = False Then File.Delete(cartella & "MedGuiR\Update\MedGuiR\UCI.txt")
+        If File.Exists(Path.Combine(cartella, "MedGuiR\ListServer.txt")) And CheckBox2.Checked = False Then File.Delete(Path.Combine(cartella, "MedGuiR\Update\MedGuiR\ListServer.txt"))
+        If File.Exists(Path.Combine(cartella, "MedGuiR\UCI.txt")) And CheckBox1.Checked = False Then File.Delete(Path.Combine(cartella, "MedGuiR\Update\MedGuiR\UCI.txt"))
 
         Timer1.Enabled = True
     End Sub
